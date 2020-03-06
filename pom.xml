@@ -8,6 +8,11 @@
     <packaging>war</packaging>
     <version>1.0</version>
 
+    <properties>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+    </properties>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -35,6 +40,13 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
             <version>2.2.5.RELEASE</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/net.sf.jmatchparser/jMatchParser-charset -->
+        <dependency>
+            <groupId>net.sf.jmatchparser</groupId>
+            <artifactId>jMatchParser-charset</artifactId>
+            <version>0.1</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 

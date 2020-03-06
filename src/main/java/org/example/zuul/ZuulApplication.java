@@ -10,6 +10,9 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 public class ZuulApplication extends SpringBootServletInitializer {
 
     public static void main(String[] args) {
+        /*java.util.SortedMap<String, java.nio.charset.Charset> map = java.nio.charset.Charset.availableCharsets();
+        map.keySet().stream().forEach(System.out::println);*/
+        System.out.println(java.nio.charset.Charset.forName("dec-mcs").name());
         SpringApplication.run(ZuulApplication.class, args);
     }
 }
