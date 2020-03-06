@@ -1,0 +1,10 @@
+zuul:
+  routes:
+    foos:
+      path: /pls/**
+      sensitiveHeaders:
+      url: https://carnesweb.um.es/pls
+    www:
+      path: /WWW/**
+      sensitiveHeaders:
+      url: https://carnesweb.um.es/WWW
